@@ -1,0 +1,26 @@
+## USE THIS TEMPLATE FOR OCS/ECS GAMES in ADF FORMAT ##
+# You will need a copy of Kickstart_v1.3_rev_34.5 renamed to kick13.rom in your BIOS folder
+# Increase nr_floppies if game comes on more than 1 disk
+# For each additional disk up to a max of 4 add -
+# floppy1=<PATH TO ADF 2>/GAME.adf
+# floppy2=<PATH TO ADF 3>/GAME.adf
+# floppy3=<PATH TO ADF 4>/GAME.adf
+kickstart_rom_file=/etc/libretro/system/kick13.rom
+use_gui=no
+show_leds=true
+chipset=ocs
+cpu_type=68000
+cpu_speed=real
+cpu_compatible=true
+chipmem_size=1
+bogomem_size=2
+gfx_center_vertical=simple
+gfx_center_horizontal=simple
+gfx_width=640
+gfx_height=512
+gfx_framerate=1
+sound_output=normal
+sound_channels=mixed
+floppy_speed=100
+nr_floppies=1
+floppy0=<PATH TO ADF 1>/GAME.adf

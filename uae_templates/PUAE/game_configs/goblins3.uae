@@ -1,0 +1,18 @@
+# Tested Version - Goblins3_v2.3
+# IMPORTANT: Custom WHDLoad.hdf is required with settings EXPCHIP CUSTOM2=1
+use_gui=no
+show_leds=true
+chipset=ecs
+cpu_type=68000
+chipmem_size=4
+fastmem_size=6
+gfx_center_vertical=simple
+gfx_center_horizontal=simple
+gfx_width=640
+gfx_height=512
+gfx_framerate=1
+sound_output=exact
+sound_channels=mixed
+kickstart_rom_file=/etc/libretro/system/kick31.rom
+hardfile=read-write,32,1,2,512,<PATH TO GAME>/WHDLoad.hdf
+hardfile=read-write,32,1,2,512,<PATH TO GAME>/GAME.hdf

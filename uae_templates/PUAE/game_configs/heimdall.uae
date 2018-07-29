@@ -1,0 +1,16 @@
+# Tested Version - Heimdall_v1.0_0234
+# IMPORTANT: Custom WHDLoad.hdf is required with settings CUSTOM1=5 in order to save
+use_gui=no
+show_leds=true
+chipset=ecs
+cpu_type=68000
+chipmem_size=4
+fastmem_size=4
+gfx_center_vertical=simple
+gfx_center_horizontal=simple
+gfx_width=724
+gfx_height=566
+sound_channels=mixed
+kickstart_rom_file=/etc/libretro/system/kick31.rom
+hardfile=read-write,32,1,2,512,<PATH TO GAME>/WHDLoad.hdf
+hardfile=read-write,32,1,2,512,<PATH TO GAME>/GAME.hdf

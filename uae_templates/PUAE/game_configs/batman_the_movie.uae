@@ -1,0 +1,16 @@
+# Only version that I found that works is BatmanTheMovie_v1.5_1Disk_0019
+use_gui=no
+show_leds=true
+chipset=ocs
+cpu_type=68000
+chipmem_size=4
+fastmem_size=4
+gfx_center_vertical=simple
+gfx_center_horizontal=simple
+gfx_width=640
+gfx_height=512
+sound_output=exact
+sound_channels=mixed
+kickstart_rom_file=/etc/libretro/system/kick31.rom
+hardfile=read-write,32,1,2,512,/etc/libretro/system/WHDLoad.hdf
+hardfile=read-write,32,1,2,512,/media/amiga/batman.hdf

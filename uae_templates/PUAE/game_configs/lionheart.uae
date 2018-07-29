@@ -1,0 +1,21 @@
+# Tested Version - Lionheart_v2.2_0845
+# This is probably the most graphically demanding game of the OCS/ECS generation!
+# It's playable with these settings but the core struggles with the emulation
+use_gui=no
+show_leds=true
+chipset=ecs
+cpu_type=68000
+cpu_compatible=true
+chipmem_size=4
+fastmem_size=4
+gfx_center_vertical=simple
+gfx_center_horizontal=simple
+gfx_width=640
+gfx_height=512
+gfx_framerate=2
+collision_level=none
+sound_output=normal
+sound_channels=mixed
+kickstart_rom_file=/etc/libretro/system/kick31.rom
+hardfile=read-write,32,1,2,512,/etc/libretro/system/WHDLoad.hdf
+hardfile=read-write,32,1,2,512,<PATH TO GAME>/GAME.hdf

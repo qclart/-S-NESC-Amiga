@@ -1,0 +1,17 @@
+# Tested Versions - Settlers_v1.5_0143
+# Increased fastmem_size to handle memory requirements
+use_gui=no
+show_leds=true
+chipset=ecs
+cpu_type=68000
+chipmem_size=4
+fastmem_size=8
+gfx_center_vertical=simple
+gfx_center_horizontal=simple
+gfx_width=640
+gfx_height=512
+sound_output=exact
+sound_channels=mixed
+kickstart_rom_file=/etc/libretro/system/kick31.rom
+hardfile=read-write,32,1,2,512,/etc/libretro/system/WHDLoad.hdf
+hardfile=read-write,32,1,2,512,<PATH TO GAME>/GAME.hdf

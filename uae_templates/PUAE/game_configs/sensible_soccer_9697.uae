@@ -1,0 +1,20 @@
+# Tested Version - SensibleWorldOfSoccer9697_v1.7_0842
+# Fixes career mode not loading
+use_gui=no
+show_leds=true
+chipset=ecs
+cpu_type=68020
+cpu_speed=1
+finegrain_cpu_speed=512
+immediate_blits=true
+chipmem_size=4
+fastmem_size=4
+gfx_center_vertical=simple
+gfx_center_horizontal=simple
+gfx_width=640
+gfx_height=512
+sound_output=exact
+sound_channels=mixed
+kickstart_rom_file=/etc/libretro/system/kick31.rom
+hardfile=read-write,32,1,2,512,<PATH TO GAME>/WHDLoad.hdf
+hardfile=read-write,32,1,2,512,<PATH TO GAME>/GAME.hdf

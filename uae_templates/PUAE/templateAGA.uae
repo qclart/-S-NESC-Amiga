@@ -1,0 +1,27 @@
+## USE THIS TEMPLATE FOR AGA GAMES ##
+# NAND Linked Sync, <PATH TO GAME> = /var/lib/hakchi/games/snes-usa/.storage/<GAME_ID>
+# Standard NAND Sync/USB-Host Export, <PATH TO GAME> = /var/games/<GAME_ID>
+# USB-Host Standard Linked Export, <PATH TO GAME> = /media/hakchi2CE/games_snes/<GAME_ID>
+# USB-Host Optimal Linked Export - add all files to a folder called amiga on the root of your USB, <PATH TO GAME> = /media/amiga
+# Settings for gfx_width & gfx_height: LowRes 320x256, HiRes 640x512, Max 724x566
+# If you get memory errors try increasing fastmem_size to a max of 8. Note that this will cause longer loading times
+# Increase gfx_framerate for better audio sync at the expense of skipped frames
+use_gui=no
+show_leds=true
+chipset=aga
+cpu_type=68020
+cpu_speed=2
+finegrain_cpu_speed=1024
+immediate_blits=true
+chipmem_size=4
+fastmem_size=4
+gfx_center_vertical=simple
+gfx_center_horizontal=simple
+gfx_width=640
+gfx_height=512
+gfx_framerate=1
+sound_output=normal
+sound_channels=mixed
+kickstart_rom_file=/etc/libretro/system/kick31.rom
+hardfile=read-write,32,1,2,512,/etc/libretro/system/WHDLoad.hdf
+hardfile=read-write,32,1,2,512,<PATH TO GAME>/GAME.hdf

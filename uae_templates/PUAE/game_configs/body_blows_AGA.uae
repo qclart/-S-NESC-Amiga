@@ -1,0 +1,21 @@
+# Tested Version - BodyBlows_v1.2_AGA_1322
+# Enables better audio sync and less screen flashing on loading
+use_gui=no
+show_leds=true
+chipset=aga
+cpu_type=68020
+cpu_speed=2
+finegrain_cpu_speed=1024
+chipmem_size=4
+fastmem_size=8
+bogomem_size=0
+gfx_center_vertical=simple
+gfx_center_horizontal=simple
+gfx_width=724
+gfx_height=566
+gfx_framerate=2
+sound_output=normal
+sound_channels=mixed
+kickstart_rom_file=/etc/libretro/system/kick31.rom
+hardfile=read-write,32,1,2,512,<PATH TO GAME>/WHDLoad.hdf
+hardfile=read-write,32,1,2,512,<PATH TO GAME>/GAME.hdf

@@ -1,0 +1,23 @@
+# Tested Version - Aladdin_v1.7_AGA_0420 
+# This config for Aladdin AGA tries to balance playabilty vs sound sync
+# Increasing gfx_framerate to 4 gives great sound but also a lot of skipped frames
+show_leds=true
+chipset=aga
+cpu_type=68020
+cpu_speed=1
+finegrain_cpu_speed=512
+immediate_blits=true
+chipmem_size=4
+fastmem_size=6
+z3mem_size=32
+gfx_center_vertical=simple
+gfx_center_horizontal=simple
+gfx_width=640
+gfx_height=512
+gfx_framerate=3
+collision_level=none
+sound_output=exact
+sound_channels=mixed
+kickstart_rom_file=/etc/libretro/system/kick31.rom
+hardfile=read-write,32,1,2,512,/etc/libretro/system/WHDLoad.hdf
+hardfile=read-write,32,1,2,512,<PATH TO GAME>/GAME.hdf

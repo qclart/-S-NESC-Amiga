@@ -1,0 +1,20 @@
+# Tested Versions - ShadowOfTheBeast_v2.2_1357 and ShadowOfTheBeast_v2.1b_1357
+# Shadow of the beast config for near perfect sound but with minor frame skip
+# For perfect scrolling but less sharp graphics use the low accuracy OCS template
+use_gui=no
+show_leds=true
+chipset=ocs
+cpu_type=68000
+cpu_compatible=true
+chipmem_size=4
+fastmem_size=4
+gfx_center_vertical=simple
+gfx_center_horizontal=simple
+gfx_width=640
+gfx_height=512
+gfx_framerate=2
+sound_output=exact
+sound_channels=mixed
+kickstart_rom_file=/etc/libretro/system/kick31.rom
+hardfile=read-write,32,1,2,512,/etc/libretro/system/WHDLoad.hdf
+hardfile=read-write,32,1,2,512,<PATH TO GAME>/GAME.hdf

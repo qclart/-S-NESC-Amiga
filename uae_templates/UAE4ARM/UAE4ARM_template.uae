@@ -1,0 +1,20 @@
+;; UAE4ARM TEMPLATE FOR ALL GAMES ;;
+; This template is for both OCS/ECS and AGA games
+; Screen resolution appears hardcoded and cannot be changed using gfx settings
+; Changing cpu and/or sound settings gives no noticeable improvement to the choppy sound or emulation speed
+; Change fast_copper=false for games where you get graphical glitches e.g. Lionheart
+; If you get memory errors try increasing fastmem_size to a max of 8. Note that this will cause longer loading times
+; The game Agony has a weird bug that corrupts the hdf when using AGA settings. Use cpu_type=68000 and chipset=ocs instead for Agony
+use_gui=no
+show_leds=false
+cpu_type=68020
+chipset=aga
+fast_copper=true
+chipmem_size=4
+fastmem_size=4
+gfx_framerate=0
+gfx_center_vertical=simple
+gfx_center_horizontal=simple
+kickstart_rom_file=/etc/libretro/system/kick31.rom
+hardfile=read-write,32,1,2,512,/etc/libretro/system/WHDLoad.hdf
+hardfile=read-write,32,1,2,512,<PATH TO GAME>/GAME.hdf

@@ -1,0 +1,19 @@
+# Tested Version - IK+_v1.8_2063
+# These settings give you the correct cpu timing in order to hear the sound effects
+use_gui=no
+show_leds=true
+chipset=ocs
+cpu_type=68020
+cpu_speed=2
+finegrain_cpu_speed=1024
+chipmem_size=2
+fastmem_size=2
+gfx_center_vertical=simple
+gfx_center_horizontal=simple
+gfx_width=640
+gfx_height=512
+sound_output=exact
+sound_channels=mixed
+kickstart_rom_file=/etc/libretro/system/kick31.rom
+hardfile=read-write,32,1,2,512,/etc/libretro/system/WHDLoad.hdf
+hardfile=read-write,32,1,2,512,<PATH TO GAME>/GAME.hdf

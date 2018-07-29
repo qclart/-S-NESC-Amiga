@@ -1,0 +1,23 @@
+# Tested Version - BeneathASteelSky_v2.0_0207
+# IMPORTANT: Requires a custom WHDLoad.hdf with PRELOAD setting removed. Preload for this game requires 9MB fastmem which is too much for P-UAE to handle
+# Press F5 on virtual keyboard to bring up save game menu and save to slot 0 as soon as you can
+# Press F6 key in game to bring up load menu to restore a saved game. 
+# The game can freeze sometimes when staying in the inventory at the top of the screen for too long
+# When the game freezes, pressing F6 a few times rapidly should bring up the menu allowing you to recover a saved game
+use_gui=no
+show_leds=true
+chipset=aga
+cpu_type=68020
+cpu_speed=1
+finegrain_cpu_speed=512
+chipmem_size=4
+fastmem_size=4
+gfx_center_vertical=simple
+gfx_center_horizontal=simple
+gfx_width=640
+gfx_height=512
+sound_output=exact
+sound_channels=mixed
+kickstart_rom_file=/etc/libretro/system/kick31.rom
+hardfile=read-write,32,1,2,512,/etc/libretro/system/WHDLoad.hdf
+hardfile=read-write,32,1,2,512,<PATH TO GAME>/GAME.hdf

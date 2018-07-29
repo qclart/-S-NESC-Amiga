@@ -1,0 +1,26 @@
+## USE THIS TEMPLATE FOR OLDER OCS GAMES THAT HAVE ISSUES ##
+# These settings basically sacrifice performance for best compatability
+# Will only work with games that use the standard low resolution of 320x256
+# NAND Linked Sync, <PATH TO GAME> = /var/lib/hakchi/games/snes-usa/.storage/<GAME_ID>
+# Standard NAND Sync/USB-Host Export, <PATH TO GAME> = /var/games/<GAME_ID>
+# USB-Host Standard Linked Export, <PATH TO GAME> = /media/hakchi2CE/games_snes/<GAME_ID>
+# USB-Host Optimal Linked Export - add all files to a folder called amiga on the root of your USB, <PATH TO GAME> = /media/amiga
+use_gui=no
+show_leds=true
+chipset=ocs
+cpu_type=68000
+immediate_blits=true
+chipmem_size=4
+fastmem_size=4
+gfx_center_vertical=simple
+gfx_center_horizontal=simple
+gfx_width=320
+gfx_height=256
+gfx_lores=true
+gfx_linemode=none
+collision_level=none
+sound_output=normal
+sound_channels=mixed
+kickstart_rom_file=/etc/libretro/system/kick31.rom
+hardfile=read-write,32,1,2,512,/etc/libretro/system/WHDLoad.hdf
+hardfile=read-write,32,1,2,512,<PATH TO GAME>/GAME.hdf
